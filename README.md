@@ -2,7 +2,7 @@
 
 This repository contains the official implementation of **$trAIce3D$**, a deep-learning architecture for precise microglia segmentation from large-scale 3D microscopy images.
 
-<img src="images/fig1.png" alt="trAIce3D Pipline" style="background-color: white;">
+![trAIce3D Pipline](images/fig1.png)
 
 ## Abstract
 

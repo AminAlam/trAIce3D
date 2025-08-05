@@ -1,0 +1,22 @@
+function [Images_stack, ]
+
+FileName = '/mnt/gdrive/AlVe/_Bioimaging/Alessandro/MORPHOMICS 2.0/RETINA/CX3CR1-EGFP_RETINA_20X_LARGE_TILE_MALE.nd2';
+plot_bool = true;
+
+Iminfo = ND2Info(FileName);
+[FilePointer, ImagePointer, ImageReadOut] = ND2Open(FileName);
+Num = info.numImages;
+Images_stack = ND2ReadSingle(FileName, 1:Num);
+Images_stack = double(Images_stack);
+
+if plot_bool
+    figure
+    for i = 1:1:Num
+        imagesc(Images_stack(:, :, i))
+        colormap hot
+        title(i)
+        pause(0.2)
+    end
+end
+
+ND2Close(FilePointer)

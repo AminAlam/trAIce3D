@@ -1,0 +1,14 @@
+mat73
+click
+tqdm
+matplotlib
+scipy
+torch
+torchvision
+torchio
+pandas
+plotly
+scikit-image
+nbconvert
+# neptune
+opencv-python
